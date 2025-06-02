@@ -32,10 +32,12 @@ Deno.serve(async (req) => {
         wharehouse_prices: preferences.wharehouse_prices,
         shed_prices: preferences.shed_prices,
         gate_price: preferences.gate_price,
+        gutter_price: preferences.gutter_price,
         km_price: preferences.km_price,
         colored_sheet_difference: preferences.colored_sheet_difference,
         u_profile_difference: preferences.u_profile_difference,
         solid_web_difference: preferences.solid_web_difference,
+        IVA_percentage: preferences.IVA_percentage,
       });
 
     if (insertError) throw insertError;
