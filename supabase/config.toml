@@ -405,3 +405,14 @@ entrypoint = "./functions/send-budget/index.ts"
 # Specifies static files to be bundled with the function. Supports glob patterns.
 # For example, if you want to serve static HTML pages in your function:
 # static_files = [ "./functions/send-budget/*.html" ]
+
+[functions.set-web-preferences]
+enabled = true
+verify_jwt = true
+import_map = "./functions/set-web-preferences/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/set-web-preferences/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/set-web-preferences/*.html" ]
