@@ -49,6 +49,7 @@ Deno.serve(async (req) => {
           feeder_silos: preferences.feeder_silos,
           cone_base_45: preferences.cone_base_45,
           cone_base_55: preferences.cone_base_55,
+          fiber_base_cost: preferences.fiber_base_cost,
         })
         .eq("company_id", PREFERENCES_ID)
         .select();

@@ -47,6 +47,12 @@ Deno.serve(async (req) => {
         feeder_silos: preferences.airbase_silos,
         cone_base_45: preferences.cone_base_45,
         cone_base_55: preferences.cone_base_55,
+        estimated_delivery_structures:
+          preferences.estimated_delivery_structures,
+        estimated_delivery_silos: preferences.estimated_delivery_silos,
+        membrane_cost: preferences.membrane_cost,
+        sheets_options: preferences.sheets_options,
+        fiber_base_cost: preferences.fiber_base_cost,
       });
 
     if (insertError) throw insertError;
